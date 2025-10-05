@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+    --primary-color: #F5E9D5;
+    --secundary-color: #EEDBBD;
+    --black-color: #000;
+    --white-color: #FFF;
+    --grey-color: #C4C4C4;
+    --H-color: #2F424A;
+    --fonts-color: #150F05;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    background: var(--primary-color);
+    font-family: 'Inter', sans-serif;
+    color: var(--H-color);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background: var(--secundary-color);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    border-bottom: none;
+    padding: 0.5em 1.5em;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.navbar .logo img {
+    height: 2em;
+    width: 2em;
+    margin-top: 0.3em;
+}
+
+.navbar .logo_name {
+    margin-right: auto;
+}
+
+.navbar .logo_name a {
+    margin-left: -2.8em;
+    color: var(--H-color);
+    font-weight: bold;
+    font-size: 1.6em;
+    letter-spacing: 0.1em;
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--H-color);
+    padding: 0.8em 1.6em;
+    font-size: 1.08em;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar .button-start{
+    background: var(--H-color);
+    border-radius: 0.4em;
+    padding: 0.1em 0.5em;
+}
+
+.navbar .button-start a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--secundary-color);
+    padding: 0.8em 1.6em;
+    font-size: 1.08em;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;;
+}
+
+.navbar a:hover {
+    color: var(--black-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .button-start a:hover {
+    color: var(--white-color);
+    transition: all 0.3s ease-in-out;
+}
+
+/* clase para separar la barra de navegacion del contenido de la pagina */
+
+.SEPARACION{
+    margin-bottom: 500em;
+}
+
+/* clase para separar la barra de navegacion del contenido de la pagina */

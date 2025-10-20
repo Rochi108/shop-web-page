@@ -4,140 +4,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shop Website - ROBERTOBZ</title>
+    <title>Shop Website</title>
 
     <!--------------CSS------------------>
     <link rel="stylesheet" href="assets/css/main.css">
 
+    <!--------------JS------------------>
+    <script defer src=assets/js/app.js></script>
+
     <!--------------PAGE LOGO------------------>
-    <link rel="icon" type="img/logo.png" href="logo.png">
+    <link rel="icon" type="img/logo.png" href="assets/img/logo.png">
 
     <!--------------ICONS------------------>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
 </head>
 
 <body>
 
         <!--------------Cabezera de pagina------------------->
 
-    <header>
-            <div class="navbar">
-                <nav>
-                    <ul>
-                        <li class="logo"><a href="#home"><img src="algo.png"></a></li>
-                        <li class="logo_name"><a href="#home">ROBERTOBZ</a></li>
-                        <li><a href="#about">Productos</a></li>
-                        <li><a href="#about">Informacion</a></li>
-                        <li><a href="#contact">Contacto</a></li>
-                        <li class="button-start"><a href="#empezar">EMPEZAR</a></li>
-                    </ul>
-                </nav>
-            </div>
-    </header>
-
-    <p class="SEPARACION">SEPARACION</p>
+    <section>
+        <header>
+                <div class="navbar">
+                    <nav>
+                        <ul>
+                            <li class="logo"><a href="#home"><img src="assets/img/logo.png"></a></li>
+                            <li class="logo_name"><a href="#home">NOMBRE DE EMPRESA</a></li>
+                            <li><a href="#about">Productos</a></li>
+                            <li><a href="#about">Informacion</a></li>
+                            <li><a href="#contact">Contacto</a></li>
+                            <li class="button-start"><a href="#empezar">EMPEZAR</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>
+    </section>
 
         <!--------------Home/Presentacion-------------------->
 
-    <div class="home-content">
-        <img src="home.jpg" alt="home image">
+    <section>
+        <div class="home-content">
 
-        <div class="home-text">
-            <h1>NOMBRE DEL LOCAL</h1>
-            <p>Descripcion del local</p>
-            <a href="#empezar" class="button-start">Empezar</a>
+                <div class="home-text">
+                    <h1>NOMBRE DEL LOCAL</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis velit pretium tempus volutpat. Etiam a lorem ut nisl tempor sagittis. Vestibulum facilisis ipsum molestie fermentum pharetra. Nulla facilisi. Aliquam erat volutpat. Maecenas augue turpis, ultricies ut condimentum ut, fringilla ac ligula. Sed ac auctor diam.</p>
+                    <a href="#empezar" class="button-start-home1">Empezar</a>
+                    <a href="#empezar" class="button-start-home2">Contacto</a>
+                </div>
+
+            <div class="home-image">
+                <img src="assets/img/home.png" alt="home image">
+            </div>
+
+            <div class="shape">
+                <img src="assets/img/blob.svg">
+            </div>
+
         </div>
-
-    </div>
+    </section>
 
         <!--------------Productos Destacados----------------->
 
-    <div>
-        <h2>Productos Destacados</h2>
+    <section>
         <div class="products">
+            <h2>Productos Populares</h2>
 
-            <div class="product-card">
-                <img src="producto1.jpg" alt="Producto 1">
-                <h3>Producto 1</h3>
-                <span class="price">$19.99</span>
-                <a href="#" class="button">Comprar</a>
-            </div>
+                <div class="product-list">
 
-            <div class="product-card">
-                <img src="producto2.jpg" alt="Producto 2">
-                <h3>Producto 2</h3>
-                <span class="price">$29.99</span>
-                <a href="#" class="button">Comprar</a>
-            </div>
+                    <div class="hidden">
+                        <div class="product-card3">
+                            <img src="/assets/img/product1.jpg" alt="Producto 3">
+                            <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
+                            <span class="price">$39.99</span>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
 
-            <div class="product-card">
-                <img src="producto3.jpg" alt="Producto 3">
-                <h3>Producto 3</h3>
-                <span class="price">$39.99</span>
-                <a href="#" class="button">Comprar</a>
-            </div>
+                    <div class="hidden">
+                        <div class="product-card3">
+                            <img src="/assets/img/product2.jpg" alt="Producto 3">
+                            <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
+                            <span class="price">$39.99</span>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="hidden">
+                        <div class="product-card3">
+                            <img src="/assets/img/product3.jpg" alt="Producto 3">
+                            <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
+                            <span class="price">$39.99</span>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="hidden">
+                        <div class="product-card3">
+                            <img src="/assets/img/product3.jpg" alt="Producto 3">
+                            <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
+                            <span class="price">$39.99</span>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+
+                </div>
 
         </div>
-    </div>
+    </section>
 
         <!--------------Informacion/Redes/Local-------------->
 
-    <div class="info">
-        <div class="about_info">
-            <img src="pose.png" alt="pose">
+    <section id="about">
+        <div class="info">
+            
+            <div class="hidden">
+                <div class="info-text">
+                    <h2>Sobre Nosotros</h2>
+                    <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis velit pretium tempus volutpat. Etiam a lorem ut nisl tempor sagittis. Vestibulum facilisis ipsum molestie fermentum pharetra. Nulla facilisi. Aliquam erat volutpat.<br><br>Maecenas augue turpis, ultricies ut condimentum ut, fringilla ac ligula. Sed ac auctor diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis velit pretium tempus volutpat. Etiam a lorem ut nisl tempor sagittis.</p>
+                    <p class="hidden"><b>Redes sociales, ubicacion, telefono, etc.</b></p>
+                    <li class="hidden"><i class="ri-facebook-fill"> @NOMBRE</i></li>
+                    <li class="hidden"><i class="ri-instagram-fill"> @NOMBRE</i></li>
+                </div>
+            </div>
 
-        <div class="info-text">
-            <h2>Sobre Nosotros</h2>
-            <p>Nosotros somos...</p>
-            <p>Redes sociales, ubicacion, telefono, etc.</p>
-            <li><i class="ri-facebook-fill"> @NOMBRE</i></li>
-            <li><i class="ri-instagram-fill"> @NOMBRE</i></li>
-        </div>
+            <div class="info-image">
+                <img src="assets/img/info1.jpg" alt="pose">
+            </div>
 
         </div>
-    </div>
+    </section>
 
         <!--------------COMENTARIOS/RESEÑAS------------------>
 
-    <div>
-        <h2>Comentarios de Clientes</h2>
-        <div class="reviews">
+    <section>
+        <div class="reviews-section">
+            <h2>Comentarios de Clientes</h2>
+            <div class="reviews">
 
-            <div class="review-card">
-                <p>"Excelente servicio y productos de calidad. ¡Muy recomendable!"</p>
-                <span>- Cliente 1</span>
+                <div class="review-card">
+                    <img src="/assets/img/review1.jpg" alt="Cliente 1">
+                    <p>"Excelente servicio y productos de calidad. ¡Muy recomendable!"</p>
+                    <span>Cliente 1</span>
+                </div>
+
+                <div class="review-card">
+                    <img src="/assets/img/review2.jpg" alt="Cliente 2">
+                    <p>"Me encantó la variedad de productos y la atención al cliente fue excepcional."</p>
+                    <span>Cliente 2</span>
+                </div>
+
+                <div class="review-card">
+                    <img src="/assets/img/review3.jpg" alt="Cliente 2">
+                    <p>"Precios competitivos y entrega rápida. Definitivamente volveré a comprar aquí."</p>
+                    <span>Cliente 3</span>
+                </div>
+
             </div>
-
-            <div class="review-card">
-                <p>"Me encantó la variedad de productos y la atención al cliente fue excepcional."</p>
-                <span>- Cliente 2</span>
-            </div>
-
-            <div class="review-card">
-                <p>"Precios competitivos y entrega rápida. Definitivamente volveré a comprar aquí."</p>
-                <span>- Cliente 3</span>
-            </div>
-
         </div>
-    </div>
+    </section>
 
         <!--------------Footer------------------------------->
 
-    <div>
-        <footer class="footer">
-            <div class="footer-content">
-                <img src="logo.png" alt="Logo" class="footer-logo">
-                <span class="footer-name">ROBERTOBZ</span>
-                <p>Created by ROBERTOBZ &copy; 2025</p>
-            </div>
-        </footer>
-    </div>
-
-        <!--------------JSS ANIMATIONS----------------------->
-
-    <div>
-
-    </div>
+    <section>
+        <div>
+            <footer class="footer">
+                <div class="footer-content">
+                    <img src="/assets/img/logo.png" alt="Logo" class="footer-logo">
+                    <span class="footer-name">NOMBRE DE EMPRESA</span>
+                    <p>Created by ROBERTOBZ &copy; 2025</p>
+                </div>
+            </footer>
+        </div>
+    </section>
 
 </body>

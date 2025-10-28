@@ -13,7 +13,7 @@
     <script defer src=assets/js/app.js></script>
 
     <!--------------PAGE LOGO------------------>
-    <link rel="icon" type="img/logo.png" href="assets/img/logo.png">
+    <link rel="icon" type="img/logo.png" href="assets/img/w-logo.png">
 
     <!--------------ICONS------------------>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -23,17 +23,16 @@
 
         <!--------------Cabezera de pagina------------------->
 
-    <section>
+    <section id="home">
         <header>
                 <div class="navbar">
                     <nav>
                         <ul>
-                            <li class="logo"><a href="#home"><img src="assets/img/logo.png"></a></li>
-                            <li class="logo_name"><a href="#home">NOMBRE DE EMPRESA</a></li>
-                            <li><a href="#about">Productos</a></li>
-                            <li><a href="#about">Informacion</a></li>
-                            <li><a href="#contact">Contacto</a></li>
-                            <li class="button-start"><a href="#empezar">EMPEZAR</a></li>
+                            <li class="logo"><a href="#home"><img src="assets/img/b-logo.png"></a></li>
+                            <li class="logo_name"><a href="#home">LOCAL</a></li>
+                            <li class="logo_products"><a href="#products">Productos</a></li>
+                            <li class="logo_info"><a href="#about">Informacion</a></li>
+                            <li class="button-start"><a href="#" class="open-modal-btn">EMPEZAR</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -48,8 +47,9 @@
                 <div class="home-text">
                     <h1>NOMBRE DEL LOCAL</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis velit pretium tempus volutpat. Etiam a lorem ut nisl tempor sagittis. Vestibulum facilisis ipsum molestie fermentum pharetra. Nulla facilisi. Aliquam erat volutpat. Maecenas augue turpis, ultricies ut condimentum ut, fringilla ac ligula. Sed ac auctor diam.</p>
-                    <a href="#empezar" class="button-start-home1">Empezar</a>
-                    <a href="#empezar" class="button-start-home2">Contacto</a>
+                    <div class="button-start-home">
+                        <a href="#empezar" class="open-modal-btn">Empezar</a>
+                    </div>
                 </div>
 
             <div class="home-image">
@@ -65,52 +65,81 @@
 
         <!--------------Productos Destacados----------------->
 
-    <section>
+    <section id="products">
         <div class="products">
             <h2>Productos Populares</h2>
 
-                <div class="product-list">
+                <div class="hidden">
+                    <div class="product-list">
 
-                    <div class="hidden">
-                        <div class="product-card3">
-                            <img src="/assets/img/product1.jpg" alt="Producto 3">
-                            <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
-                            <span class="price">$39.99</span>
-                            <a href="#">Comprar</a>
-                        </div>
+                            <div class="product-card1">
+                                <img src="assets/img/product1.jpg">
+                                <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
+                                <span class="price">$39.99</span>
+                                <a href="#" class="open-modal-btn">Comprar</a>
+                            </div>
+
+                            <div class="product-card2">
+                                <img src="assets/img/product2.jpg">
+                                <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
+                                <span class="price">$39.99</span>
+                                <a href="#" class="open-modal-btn">Comprar</a>
+                            </div>
+
+                            <div class="product-card3">
+                                <img src="assets/img/product3.jpg">
+                                <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
+                                <span class="price">$39.99</span>
+                                <a href="#" class="open-modal-btn">Comprar</a>
+                            </div>
+
+                            <div class="product-card4">
+                                <img src="assets/img/product4.jpg">
+                                <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
+                                <span class="price">$39.99</span>
+                                <a href="#" class="open-modal-btn">Comprar</a>
+                            </div>
+
+                            <div class="product-card5">
+                                <img src="assets/img/product5.jpg">
+                                <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
+                                <span class="price">$39.99</span>
+                                <a href="#" class="open-modal-btn">Comprar</a>
+                            </div>
+
+                            <div class="product-card6">
+                                <img src="assets/img/product6.jpg">
+                                <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
+                                <span class="price">$39.99</span>
+                                <a href="#" class="open-modal-btn">Comprar</a>
+                            </div>
+
+                            <div class="product-card7">
+                                <img src="assets/img/product7.jpg">
+                                <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
+                                <span class="price">$39.99</span>
+                                <a href="#" class="open-modal-btn">Comprar</a>
+                            </div>
+
+                            <div class="product-card8">
+                                <img src="assets/img/product8.jpg">
+                                <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
+                                <span class="price">$39.99</span>
+                                <a href="#" class="open-modal-btn">Comprar</a>
+                            </div>
+
+                            <div class="product-card9">
+                                <img src="assets/img/product9.jpg">
+                                <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
+                                <span class="price">$39.99</span>
+                                <a href="#" class="open-modal-btn">Comprar</a>
+                            </div>
+
                     </div>
-
-                    <div class="hidden">
-                        <div class="product-card3">
-                            <img src="/assets/img/product2.jpg" alt="Producto 3">
-                            <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
-                            <span class="price">$39.99</span>
-                            <a href="#">Comprar</a>
-                        </div>
-                    </div>
-
-                    <div class="hidden">
-                        <div class="product-card3">
-                            <img src="/assets/img/product3.jpg" alt="Producto 3">
-                            <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
-                            <span class="price">$39.99</span>
-                            <a href="#">Comprar</a>
-                        </div>
-                    </div>
-
-                    <div class="hidden">
-                        <div class="product-card3">
-                            <img src="/assets/img/product3.jpg" alt="Producto 3">
-                            <h3>ZAPATOS NIKE Edicion Black - UB23</h3>
-                            <span class="price">$39.99</span>
-                            <a href="#">Comprar</a>
-                        </div>
-                    </div>
-
                 </div>
-
         </div>
     </section>
+    
 
         <!--------------Informacion/Redes/Local-------------->
 
@@ -121,14 +150,15 @@
                 <div class="info-text">
                     <h2>Sobre Nosotros</h2>
                     <p class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis velit pretium tempus volutpat. Etiam a lorem ut nisl tempor sagittis. Vestibulum facilisis ipsum molestie fermentum pharetra. Nulla facilisi. Aliquam erat volutpat.<br><br>Maecenas augue turpis, ultricies ut condimentum ut, fringilla ac ligula. Sed ac auctor diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis velit pretium tempus volutpat. Etiam a lorem ut nisl tempor sagittis.</p>
-                    <p class="hidden"><b>Redes sociales, ubicacion, telefono, etc.</b></p>
-                    <li class="hidden"><i class="ri-facebook-fill"> @NOMBRE</i></li>
-                    <li class="hidden"><i class="ri-instagram-fill"> @NOMBRE</i></li>
+                    <p class="hidden"><b>Puedes ver nuestras redes en:</b></p>
+                    <li class="hidden"><a href="https://facebook.com/"><i class="ri-facebook-box-fill"></i>@NOMBRE</a></li>
+                    <li class="hidden"><a href="https://wa.me/1234567890"><i class="ri-whatsapp-line"></i>@NOMBRE</a></li>
+                    <li class="hidden"><a href="https://instagram.com/"><i class="ri-instagram-line"></i>@NOMBRE</a></li>
                 </div>
             </div>
 
             <div class="info-image">
-                <img src="assets/img/info1.jpg" alt="pose">
+                <img class="hidden" src="assets/img/info1.jpg" alt="pose">
             </div>
 
         </div>
@@ -142,19 +172,19 @@
             <div class="reviews">
 
                 <div class="review-card">
-                    <img src="/assets/img/review1.jpg" alt="Cliente 1">
+                    <img src="assets/img/review1.jpg" alt="Cliente 1">
                     <p>"Excelente servicio y productos de calidad. ¡Muy recomendable!"</p>
                     <span>Cliente 1</span>
                 </div>
 
                 <div class="review-card">
-                    <img src="/assets/img/review2.jpg" alt="Cliente 2">
+                    <img src="assets/img/review2.jpg" alt="Cliente 2">
                     <p>"Me encantó la variedad de productos y la atención al cliente fue excepcional."</p>
                     <span>Cliente 2</span>
                 </div>
 
                 <div class="review-card">
-                    <img src="/assets/img/review3.jpg" alt="Cliente 2">
+                    <img src="assets/img/review3.jpg" alt="Cliente 2">
                     <p>"Precios competitivos y entrega rápida. Definitivamente volveré a comprar aquí."</p>
                     <span>Cliente 3</span>
                 </div>
@@ -169,12 +199,23 @@
         <div>
             <footer class="footer">
                 <div class="footer-content">
-                    <img src="/assets/img/logo.png" alt="Logo" class="footer-logo">
+                    <a href="#home"><img src="assets/img/w-logo.png" alt="Logo" class="footer-logo"></a>
                     <span class="footer-name">NOMBRE DE EMPRESA</span>
-                    <p>Created by ROBERTOBZ &copy; 2025</p>
+                    <p>Creado por ROBERTOBZ &copy; 2025</p>
                 </div>
             </footer>
         </div>
     </section>
+
+        <!--------------Modal de Contacto------------------->
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Contáctanos</h2>
+            <p>Para más información, no dudes en enviarnos un mensaje.</p>
+            <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-button"><i class="ri-whatsapp-line"></i> Contactar por WhatsApp</a>
+        </div>
+    </div>
 
 </body>

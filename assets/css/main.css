@@ -869,6 +869,11 @@ html {
 }
 
 @media (max-width: 1200px) {
+
+    .navbar .logo_name {
+        margin-left: 1.5em;
+    }
+
     .navbar ul {
         padding: 0.5em 1em;
         gap: 1em;
@@ -964,7 +969,6 @@ html {
 
     .navbar .logo_name {
         font-size: 1.1em;
-        margin-right: 10em;
     }
 
     .navbar .button-start{

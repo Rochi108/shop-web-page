@@ -12,7 +12,6 @@
     --whatsapp-color: #25D366;
     --hover-whatsapp-color: #128C7E;
     --instagram-color: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-
     --anim-default: 1s;
     --anim-fast: 0.2s;
     --anim-slow: 2s;
@@ -116,7 +115,7 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     background: var(--white-color);
 }
 
@@ -493,7 +492,7 @@ html {
 }
 
 .info-text p {
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin-bottom: 2em;
     color: var(--fonts-color);
     font-weight: 400;
@@ -544,6 +543,69 @@ html {
 
 /* Information Section */
 
+/* Service Section */
+
+.services {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4em 0;
+    background-color: var(--white-color);
+}
+
+.services h2 {
+    font-size: 3.5em;
+    font-weight: 800;
+    margin-bottom: 1.5em;
+    color: var(--primary-color);
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 2.5em;
+    flex-wrap: wrap;
+}
+
+.services-list .service-card {
+    background: var(--white-color);
+    box-shadow: 0 6px 32px rgba(48, 61, 102, 0.10), 0 1.5px 6px rgba(0,0,0,0.05);
+    padding: 2em;
+    padding-bottom: 5em;
+    width: 450px;
+    transition: transform 0.2s;
+    margin: 3em 0 3em 0;
+}
+
+.services-list .service-card i {
+    font-size: 4em;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    padding: 0.5em;
+    border-radius: 50%;
+    position: relative;
+    top: -0.7em;
+}
+
+.services-list .service-card h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 1em 0 1em 0;
+}
+
+.services-list .service-card p {
+    font-size: 1.1em;
+    color: var(--fonts-color);
+    line-height: 1.6;
+}
+
+.services-list .service-card:hover {
+    transform: scale(1.05);
+}
+
+/* Service Section */
+
 /* Coments Section */
 
 .reviews-section {
@@ -593,7 +655,7 @@ html {
 }
 
 .review-card p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: var(--fonts-color);
     font-style: italic;
     text-align: center;
@@ -603,8 +665,8 @@ html {
 .review-card span {
     font-weight: bold;
     color: var(--primary-color);
-    font-size: 1.1em;
-    margin-top: auto;
+    font-size: 1.2em;
+    margin: 1em 0 1em 0;
 }
 
 /* Coments Section */
@@ -769,6 +831,41 @@ html {
     .info-text p {
         font-size: 1.5em;
     }
+
+    .services-list {
+        gap: 1.8em;
+    }
+
+    .services-list .service-card {
+        padding: 1em;
+        padding-bottom: 4em;
+        width: 320px;
+    }
+
+    .services-list .service-card i {
+        font-size: 3em;
+        padding: 0.5em;
+    }
+
+    .services-list .service-card h3 {
+        font-size: 1.8em;
+        font-weight: 700;
+        margin: 1em 0 1em 0;
+    }
+
+    .services-list .service-card p {
+        font-size: 1.2em;
+    }
+
+    .reviews-section h2 {
+        color: var(--white-color);
+    }
+
+    .review-card img {
+        width: 150px;
+        height: 150px;
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -823,6 +920,37 @@ html {
         justify-content: center;
         display: grid;
     }
+
+    .services-list {
+        gap: 1.8em;
+    }
+
+    .services-list .service-card {
+        padding: 1em;
+        padding-bottom: 4em;
+        width: 300px;
+    }
+
+    .services-list .service-card i {
+        font-size: 3em;
+        padding: 0.5em;
+    }
+
+    .services-list .service-card h3 {
+        font-size: 1.8em;
+        font-weight: 700;
+        margin: 1em 0 1em 0;
+    }
+
+    .services-list .service-card p {
+        font-size: 1.2em;
+    }
+
+    .review-card {
+        width: 300px;
+        margin: 1em 0 3em 0;
+    }
+
 }
 
 @media (max-width: 1000px) {
@@ -913,20 +1041,44 @@ html {
         justify-content: left;
     }
 
+    .services-list {
+        gap: 1.8em;
+    }
+
+    .services-list .service-card {
+        padding: 1em;
+        padding-bottom: 4em;
+        width: 225px;
+    }
+
+    .services-list .service-card i {
+        font-size: 3em;
+        padding: 0.5em;
+    }
+
+    .services-list .service-card h3 {
+        font-size: 1.8em;
+        font-weight: 700;
+        margin: 1em 0 1em 0;
+    }
+
+    .services-list .service-card p {
+    font-size: 1.2em;
+    }
+
     .review-card {
-        width: 250px;
-        min-height: 250px;
+        width: 225px;
         margin: 1em 0 3em 0;
     }
 
     .review-card img {
-        width: 180px;
-        height: 180px;
+        width: 140px;
+        height: 140px;
     }
 
     .reviews-section h2 {
         font-size: 2.5em;
-        color: var(--background-color);
+        color: var(--white-color);
     }
 
     .review-card p {
@@ -977,7 +1129,7 @@ html {
     }
 
     .home-content .home-text p {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .home-content .home-text .button-start-home {
@@ -1005,20 +1157,37 @@ html {
     .info .info-image{
         display: block;
         margin-bottom: -1em;
+        box-shadow: 0 -40px 50px rgba(10, 0, 0, 0.15);
+        order: -2;
     }
 
-    .reviews-section h2 {
+    .services h2 {
+        font-size: 2.2em;
+    }
+
+    .services-list .service-card {
+        padding: 1em;
+        padding-bottom: 4em;
+        width: 275px;
+    }
+
+    .services-list .service-card i {
         font-size: 2em;
+        padding: 0.7em;
     }
 
-    .review-card img {
-        width: 120px;
-        height: 120px;
+    .services-list .service-card h3 {
+        font-size: 1.5em;
+        font-weight: 700;
+        margin: 1em 0 1em 0;
     }
 
-    .review-card p,
-    .review-card span {
+    .services-list .service-card p {
         font-size: 1em;
+    }
+
+    .reviews-section {
+        display: none;
     }
 
     .footer-name {

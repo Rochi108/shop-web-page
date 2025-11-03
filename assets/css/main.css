@@ -550,7 +550,7 @@ html {
     margin: 0 auto;
     text-align: center;
     padding: 4em 0;
-    background-color: var(--white-color);
+    background-color: var(--background-color);
 }
 
 .services h2 {
@@ -606,11 +606,89 @@ html {
 
 /* Service Section */
 
+/* Contact Section */
+
+.contact-form {
+    background: var(--primary-color);
+    padding: 4em 0;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 3.5em;
+    font-weight: 800;
+    margin-bottom: 1.5em;
+    color: var(--white-color);
+}
+
+.contact-form form {
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 3em 3em 3em 3em;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 6px 32px rgba(48, 61, 102, 0.10), 0 1.5px 6px rgba(0,0,0,0.05);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 1px solid var(--grey-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2em;
+    color: var(--fonts-color);
+}
+
+.contact-form textarea {
+    resize: none;
+    min-height: 200px;
+}
+
+.contact-form button {
+    background: var(--white-color);
+    color: var(--black-color);
+    padding: 1em;
+    border-radius: 0.5em;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--anim-fast);
+}
+
+.contact-form button {
+    background: var(--primary-color);
+    color: var(--secundary-color);
+}
+
+.form-buttons {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+.form-buttons button {
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background: var(--black-color);
+    color: var(--white-color);
+}
+
+/* Contact Section */
+
 /* Coments Section */
 
 .reviews-section {
     padding: 4em 0 4em 0;
-    margin-top: 0;
+    margin-top: 1em;
 }
 
 .reviews-section h2 {
@@ -674,7 +752,7 @@ html {
 /* Footer Section */
 
 .footer {
-    background: var(--primary-color);
+    background: var(--black-color);
     width: 100%;
     padding: 2em 0 2em 0;
     text-align: center;
@@ -866,6 +944,10 @@ html {
         height: 150px;
     }
 
+    .footer{
+        background-color: var(--black-color);
+    }
+
 }
 
 @media (max-width: 1200px) {
@@ -954,6 +1036,10 @@ html {
     .review-card {
         width: 300px;
         margin: 1em 0 3em 0;
+    }
+
+    .footer{
+        background-color: var(--black-color);
     }
 
 }
@@ -1089,6 +1175,10 @@ html {
         font-size: 1.1em;
     }
 
+    .footer{
+        background-color: var(--black-color);
+    }
+
     .footer-name {
         font-size: 1.1em;
         letter-spacing: 0.4em;
@@ -1188,6 +1278,27 @@ html {
 
     .services-list .service-card p {
         font-size: 1em;
+    }
+
+    .contact-form h2 {
+        font-size: 2.5em;
+        font-weight: 800;
+        margin-bottom: 1em;
+    }
+
+    .contact-form form {
+        max-width: 350px;
+        padding: 2em 2em 2em 2em;
+    }
+
+    .contact-form button {
+        padding: 0.8em;
+        font-size: 1.2em;
+        transition: var(--anim-fast);
+    }
+
+    .form-buttons {
+        gap: 1.5em;
     }
 
     .reviews-section {
